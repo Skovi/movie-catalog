@@ -1,0 +1,305 @@
+import img001 from '../images/001.svg';
+import img002 from '../images/002.svg';
+import img003 from '../images/003.svg';
+import img004 from '../images/004.svg';
+import img01 from '../images/01.png';
+import img02 from '../images/02.png';
+import img03 from '../images/03.png';
+import img04 from '../images/04.png';
+import img05 from '../images/05.png';
+import img06 from '../images/06.png';
+import img07 from '../images/07.png';
+import img08 from '../images/08.png';
+import img09 from '../images/09.png';
+import img10 from '../images/10.png';
+import img11 from '../images/11.png';
+import img12 from '../images/12.png';
+import img13 from '../images/13.png';
+import img14 from '../images/14.png';
+import img15 from '../images/15.png';
+
+
+export const dataServicesCard = [
+  {
+    'id': '001',
+    'image': img001,
+    'text': 'Регулярные акции, скидки и бонусы',
+    'alt': 'Картинка 1',
+  },
+  {
+    'id': '002',
+    'image': img002,
+    'text': 'Лицензионные ключи от официальных издателей',
+    'alt': 'Картинка 2',
+  },
+  {
+    'id': '003',
+    'image': img003,
+    'text': 'Гарантированная техподдержка вашей покупки',
+    'alt': 'Картинка 3',
+  },
+  {
+    'id': '004',
+    'image': img004,
+    'text': 'Мгновенное получение ключа на почту и в личный кабинет',
+    'alt': 'Картинка 4',
+  },
+];
+
+export const data = [
+  {
+    'id': '01',
+    'favorite': '',
+    'lables': 'НОВИНКА', //акция/новинка/скидка
+    'name': 'DEATHLOOP',
+    'old_price': '',
+    'new_price': '2 609 ₽',
+    'image': img01,
+    'popularity': '',
+    'genre': 'action',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '02',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Grand Theft Auto V: Premium Edition + Megalodon Shark Card Bundle',
+    'old_price': '',
+    'new_price': '2 609 ₽',
+    'image': img02,
+    'popularity': '',
+    'genre': 'action',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '03',
+    'favorite': '',
+    'lables': 'СКИДКА', //акция/новинка/скидка
+    'name': 'Red dead redemption 2',
+    'old_price': '3 500 ₽',
+    'new_price': '2 609 ₽',
+    'image': img03,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '04',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Gamedec',
+    'old_price': '2 609 ₽',
+    'new_price': '1 124 ₽',
+    'image': img04,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '05',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Tales of Arise',
+    'old_price': '',
+    'new_price': '1 999 ₽',
+    'image': img05,
+    'popularity': '',
+    'genre': 'action',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '06',
+    'favorite': '',
+    'lables': 'СКИДКА', //акция/новинка/скидка
+    'name': 'Cyberpunk 2077',
+    'old_price': '3 500 ₽',
+    'new_price': '1 999 ₽',
+    'image': img06,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '07',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Severed Steel',
+    'old_price': '',
+    'new_price': '418.50 ₽',
+    'image': img07,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '08',
+    'favorite': '',
+    'lables': 'АКЦИЯ', //акция/новинка/скидка
+    'name': 'Pathfinder: Wrath of the Righteous',
+    'old_price': '',
+    'new_price': '1 499 ₽',
+    'image': img08,
+    'popularity': '',
+    'genre': 'action',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '09',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Aragami 2',
+    'old_price': '',
+    'new_price': '557 ₽',
+    'image': img09,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '10',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Tails of Iron',
+    'old_price': '',
+    'new_price': '539 ₽',
+    'image': img10,
+    'popularity': '',
+    'genre': 'action',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '11',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Aragami 2',
+    'old_price': '',
+    'new_price': '557 ₽',
+    'image': img11,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '12',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Aragami 2',
+    'old_price': '',
+    'new_price': '557 ₽',
+    'image': img12,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '13',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Tails of Iron',
+    'old_price': '',
+    'new_price': '539 ₽',
+    'image': img13,
+    'popularity': '',
+    'genre': 'action',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '14',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Aragami 2',
+    'old_price': '',
+    'new_price': '557 ₽',
+    'image': img14,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': 'Capcom',
+    'peculiarities': '',
+    'product_type': '',
+  },
+  {
+    'id': '15',
+    'favorite': '',
+    'lables': '', //акция/новинка/скидка
+    'name': 'Tails of Iron',
+    'old_price': '',
+    'new_price': '539 ₽',
+    'image': img15,
+    'popularity': '',
+    'genre': 'strategy',
+    'platform': '',
+    'activation': '',
+    'developer': '',
+    'publisher': '07th Expansion',
+    'peculiarities': '',
+    'product_type': '',
+  },
+];

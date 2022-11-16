@@ -1,0 +1,63 @@
+.movie_card {
+  width: 25vw;
+  height: 40vw;
+  padding: 0 8px 13px 8px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+.movie_card_lables {
+  width: 77px;
+  height: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px 5px;
+  gap: 10px;
+  background: #141414;
+  border-radius: 0px 0px 14px 14px;
+}
+
+.movie_card_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+}
+
+.movie_card_info h2 {
+  font-size: 16px;
+  margin: 2px;
+}
+
+.movie_card_info h3 {
+  color: #FF5C00;
+  margin: 2px;
+}
+
+.movie_card_info h4 {
+  color: #707070;
+  font-size: 12px;
+  text-decoration: line-through;
+  margin: 2px;
+}
+
+@media (min-width: 760px) {
+  .movie_card {
+    padding: 0 8px 29px 8px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .movie_card {
+    width: 15vw;
+    height: 20vw;
+    padding: 0 8px 15px 8px;
+  }
+}

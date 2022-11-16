@@ -1,0 +1,36 @@
+.main_container {
+  padding-bottom: 64px;
+}
+
+.main_container_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container_header_text {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_container_header_text h4 {
+  color: #FF5C00;
+}
+
+.main_container_header_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 15px;
+  gap: 10px;
+  width: 343px;
+  height: 44px;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Grato Grotesk';
+}

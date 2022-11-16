@@ -1,0 +1,24 @@
+.services_cards {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 0px 16px;
+}
+
+@media (min-width: 760px) {
+  .services_cards {
+    padding: 0 48px 0px 48px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services_cards {
+    padding: 0 120px 0px 120px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

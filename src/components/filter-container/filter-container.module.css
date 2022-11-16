@@ -1,0 +1,32 @@
+.filter_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 24px 24px;
+  width: 342px;
+  background: #262626;
+}
+
+.filter_container_button_apply {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 15px;
+  gap: 10px;
+  background: #FF5C00;
+  border-radius: 40px;
+  width: 278px;
+  height: 41px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.filter_container_button_reset {
+  color: #707070;
+  font-size: 18px;
+  display: flex;
+align-items: center;
+border: none;
+background: #262626;
+}
