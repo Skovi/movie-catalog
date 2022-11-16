@@ -17,7 +17,67 @@ import img12 from '../images/12.png';
 import img13 from '../images/13.png';
 import img14 from '../images/14.png';
 import img15 from '../images/15.png';
+import down from '../images/down.svg';
+import up from '../images/up.svg';
 
+export const parameters = [
+  {
+    'type': 'popularity',
+    'name':'По популярности',
+    'img_up': up,
+    'img_down': down,
+    'options': '',
+  },
+  {
+    'type': 'genre',
+    'name':'Жанр',
+    'img_up': up,
+    'img_down': down,
+    'options': ['Экшн','Приключения','Инди','Карточная игра','Ролевая','Стратегия','Открытый мир','Казуальная'],
+  },
+  {
+    'type': 'platforms',
+    'name':'Платформы',
+    'img_up': up,
+    'img_down': down,
+    'options': '',
+  },
+  {
+    'type': 'activation',
+    'name':'Активация',
+    'img_up': up,
+    'img_down': down,
+    'options': '',
+  },
+  {
+    'type': 'developer',
+    'name':'Разработчик',
+    'img_up': up,
+    'img_down': down,
+    'options': '',
+  },
+  {
+    'type': 'publisher',
+    'name':'Издатель',
+    'img_up': up,
+    'img_down': down,
+    'options': ['07th Expansion','505 Games','505 Games, All In! Games','Alawar Entertainment','BANDAI NAMCO Entertainment','Capcom','Electronic Arts','Dungeon Crawler'],
+  },
+  {
+    'type': 'peculiarities',
+    'name':'Особенности',
+    'img_up': up,
+    'img_down': down,
+    'options': '',
+  },
+  {
+    'type': 'product_type',
+    'name':'Тип товара',
+    'img_up': up,
+    'img_down': down,
+    'options': '',
+  },
+];
 
 export const dataServicesCard = [
   {

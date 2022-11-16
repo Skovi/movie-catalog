@@ -2,9 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 24px 24px;
+  /* padding: 0px 24px 24px; */
   width: 342px;
   background: #262626;
+  /* padding: 24px 38px; */
+}
+
+.filter_container_hide {
+  width: 278px;
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #333333;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.filter_container_hide p {
+  margin: 0 9px;
+}
+
+.filter_container_main {
+  padding: 24px 32px;
+}
+
+.filter_container_popularity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filter_container_price_inputs input {
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  background: #262626;
+  width: 127.5px;
+  height: 30px;
 }
 
 .filter_container_button_apply {
@@ -14,19 +47,24 @@
   align-items: center;
   padding: 9px 15px;
   gap: 10px;
-  background: #FF5C00;
+  /* background: #FF5C00; */
   border-radius: 40px;
   width: 278px;
   height: 41px;
   color: #ffffff;
   font-size: 18px;
+  border: none;
+  margin: 24px 0;
 }
 
 .filter_container_button_reset {
   color: #707070;
   font-size: 18px;
   display: flex;
-align-items: center;
-border: none;
-background: #262626;
+  align-items: center;
+  border: none;
+  background: #262626;
+  margin: auto;
 }
+
+

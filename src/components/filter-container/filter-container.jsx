@@ -1,28 +1,69 @@
+import React, { useCallback, useEffect, useState, useRef } from "react";
 import styles from "./filter-container.module.css";
+import down from '../../images/down.svg';
+import up from '../../images/up.svg';
+import cross from '../../images/cross.svg';
+import { parameters } from '../../utils/data';
+import { FilterParameter } from "../filter-parameter/filter-parameter";
 
 export const FilterContainer = () => {
+  const [reset, onReset] = useState(false);
+  const [activefilters, getActivefilters] = useState([]);
+
+  const onResetFilters = () => {
+    onReset(true);
+  };
+
+  const onChangeValue = () => {
+
+  };
+
+
+  function colorApply(data) {
+    if (data.length) {
+      return '#FF5C00'
+    };
+    return '#707070'
+  };
   return (
     <div className={styles.filter_container}>
-      <button className={styles.filter_container_button_hide}>Скрыть фильтр</button>
 
-      <div>
-        <p>По популярности</p>
+      <div className={styles.filter_container_hide} >
+        <img src={cross} alt='Крестик' />
+        <p>Скрыть фильтр</p>
       </div>
-
-      <div className={styles.filter_container_price}>
-        <p>Цена, ₽ </p>
-
-        <div className={styles.filter_container_price_inputs}>
-        <input />
-        <input />
+      <div className={styles.filter_container_main}>
+        <div className={styles.filter_container_price}>
+          <p>Цена, ₽ </p>
         </div>
 
-        <div className={styles.slider}>
+        {parameters.map((item, index) => (
+        <FilterParameter 
+        item={item} 
+        key={index} 
+        reset={reset} 
+        onReset={onReset}
+        getActivefilters={getActivefilters}
+        activefilters={activefilters}
+        />
+        ))}
 
-        </div>
+        <button
+          className={styles.filter_container_button_apply}
+          style={{backgroundColor: `${colorApply(activefilters)}`}}
+        >
+          ПРИМЕНИТЬ
+        </button>
+        <button
+          className={styles.filter_container_button_reset}
+          onClick={onResetFilters}
+        >
+          Сбросить фильтр
+        </button>
       </div>
-      <button className={styles.filter_container_button_apply}>ПРИМЕНИТЬ</button>
-      <button className={styles.filter_container_button_reset}>Сбросить фильтр</button>
     </div>
   )
 };
+
+
+
