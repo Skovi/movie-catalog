@@ -1,5 +1,5 @@
 .services_card {
-  width: 343px;
+  width: 280px;
   height: 94px;
   border: 2px solid #707070;
   border-radius: 15px;
@@ -18,14 +18,13 @@
 
 @media (min-width: 760px) {
   .services_card {
-    width: 343px;
-  height: 94px;
+    height: 94px;
     flex-direction: column;
     margin: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .services_card {
     width: 20%;
     height: 192px;

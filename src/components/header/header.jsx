@@ -7,11 +7,12 @@ import Like from '../../images/like.svg';
 import User from '../../images/user.svg';
 import { useState } from "react";
 
-export const Header = ({ hidden }) => {
+export const Header = ({ hidden, catalog, getCatalog }) => {
   const [state, setState] = useState('');
 
   const onChangeInput = (e) => {
-    setState(e.target.value);
+    setState(e.target.value)
+    getCatalog(() => catalog.sort(() => Math.random() - 3));
     
     console.log(state);
   };
@@ -27,7 +28,7 @@ export const Header = ({ hidden }) => {
       </div>
 
       <div className={styles.header_container_div_search}>
-        <p>Каталог</p>
+        <p>Catalogue</p>
         <input
           className={styles.header_container_div_search_input}
           type='text'

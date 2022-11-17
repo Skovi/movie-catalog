@@ -16,14 +16,14 @@ export const Footer = ({ hidden }) => {
           </ul>
 
           <div className={styles.footer_info_contacts}>
-            <p>+7 (495) 727-01-81</p>
+            <p className={styles.footer_info_contacts_number}>+7 (495) 727-01-81</p>
             <p>care@turbistore.ru</p>
           </div>
 
         </div>
 
         <div className={styles.footer_copyright}>
-          <p>© 2021 Turbinary</p>
+          <p className={styles.footer_copyright_year}>© 2021 Turbinary</p>
           <p>Дизайн в ADN Digital Studio</p>
         </div>
 

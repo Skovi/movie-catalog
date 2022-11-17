@@ -4,14 +4,13 @@
 }
 
 .filter_container_hide {
-  width: 278px;
   height: 94px;
   display: flex;
   flex-direction: row;
   justify-content: start;
   background-color: #333333;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 38px;
 }
 
 .filter_container_hide p {
@@ -24,7 +23,7 @@
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   .filter_container_all_page {
     display: none;
   }

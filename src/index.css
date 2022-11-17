@@ -1,41 +1,4 @@
-@font-face {
-  font-family: "Grato Grotesk";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/gratimogrotesk-black.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Grato Grotesk bold";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/gratimogrotesk-bold.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Grato Grotesk light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/gratimogrotesk-light.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Grato Grotesk medium";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/gratimogrotesk-medium.otf") format("otf");
-}
-
-@font-face {
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Space Grotesk"),
-  url("./fonts/SpaceGrotesk-VariableFont_wght.ttf") format("ttf");
-}
-
 body {
+  font-family: 'Roboto Flex', sans-serif;
   margin: 0;
-  font-family: 'Grato Grotesk', "Space Grotesk", 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-};
+}

@@ -1,0 +1,11 @@
+.no_search_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 205px;
+  text-align: center;
+}
+
+.no_search_container_img {
+  height: 48px;
+}

@@ -1,29 +1,13 @@
 .filter_container {
-  /* display: none; */
   flex-direction: column;
   align-items: center;
-  width: 266px;
+  max-width: 760px;
   background: #262626;
   padding: 0 38px;
 }
 
-
-.filter_container_main {
-  /* padding: 24px 32px; */
-}
-
-.filter_container_popularity {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.filter_container_price_inputs input {
-  border: 1px solid #FFFFFF;
-  border-radius: 40px;
-  background: #262626;
-  width: 127.5px;
-  height: 30px;
+.filter_container_price {
+  padding: 24px 0;
 }
 
 .filter_container_button_apply {
@@ -34,12 +18,12 @@
   padding: 9px 15px;
   gap: 10px;
   border-radius: 40px;
-  width: 278px;
+  width: 248px;
   height: 41px;
   color: #ffffff;
   font-size: 18px;
   border: none;
-  margin: 24px 0;
+  margin: 24px auto;
 }
 
 .filter_container_button_reset {
@@ -49,19 +33,19 @@
   align-items: center;
   border: none;
   background: #262626;
-  margin: auto;
+  margin: 24px auto;
 }
 
 @media (min-width: 760px) {
   .filter_container {
-    /* display: none; */
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   .filter_container {
-    /* display: flex; */
+    width: 266px;
     background: #141414;
+    padding: 0;
   }
 
   .filter_container_button_reset {

@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  grid-gap: 24px;
-  gap: 24px;
+  row-gap: 16px;
+  column-gap: 23px;
+  padding-left: 16px;
 }
 
 @media (min-width: 760px) {
@@ -11,7 +12,7 @@
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   .movie_cards {
   }
 }

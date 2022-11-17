@@ -1,15 +1,17 @@
 .container_info {
-  padding: 0 16px;
+  padding-top: 32px;
+}
+
+.container_info_h2 {
+  padding-bottom: 16px;
+}
+
+.container_info h4 {
+  padding-bottom: 24px 0 16px 0;
 }
 
 @media (min-width: 760px) {
   .container_info {
-    padding: 0 48px;
-  }
-}
-
-@media (min-width: 1080px) {
-  .container_info {
-    padding: 0 120px;
+    padding-top: 80px;
   }
 }

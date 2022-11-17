@@ -1,7 +1,6 @@
 .movie_card {
-  width: 25vw;
-  height: 40vw;
-  padding: 0 8px 13px 8px;
+  width: 40vw;
+  height: 60vw;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -49,16 +48,21 @@
 
 @media (min-width: 760px) {
   .movie_card {
-    padding: 0 8px 29px 8px;
+    width: 25vw;
+    height: 40vw;
   }
-
 }
 
 @media (min-width: 1080px) {
   .movie_card {
-    width: 15vw;
-    height: 20vw;
-    padding: 0 8px 15px 8px;
+    width: 17vw;
+    height: 27vw;
   }
+}
 
+@media (min-width: 1440px) {
+  .movie_card {
+    width: 12vw;
+    height: 19vw;
+  }
 }

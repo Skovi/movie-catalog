@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 24px 0;
 }
 
-hr {
-  margin: 20px 0;
+.filter_parameter_hr {
+  margin: 0;
   padding: 0;
   height: 0;
   border: none;
@@ -57,7 +58,11 @@ span {
   
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
+  .filter_parameter {
+    padding: 24px 0;
+  }
+
   span {
     background-color: #141414;
   }

@@ -1,7 +1,7 @@
 import { FilterContainer } from "../filter-container/filter-container";
 import styles from "./filter-container-left-panel.module.css";
 
-export const FilterContainerLeftPanel = ({ hidden }) => {
+export const FilterContainerLeftPanel = ({ hidden, getActivefilters, activefilters, catalog, getCatalog }) => {
   
 
   return (
@@ -10,7 +10,8 @@ export const FilterContainerLeftPanel = ({ hidden }) => {
     style={{ display: `${hidden.displayFilter}` }}
     >
       
-      <FilterContainer hidden={hidden} />
+      <FilterContainer hidden={hidden} getActivefilters={getActivefilters} activefilters={activefilters} getCatalog={getCatalog} catalog={catalog} />
     </div>
   )
 };
+//здесь нужен хидден???

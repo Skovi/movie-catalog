@@ -8,7 +8,7 @@
     }
   }
   
-  @media (min-width: 1080px) {
+  @media (min-width: 1440px) {
     .filter_container_left_panel {
       display: flex;
     }
