@@ -1,0 +1,15 @@
+.filter_container_left_panel {
+    display: none;
+}
+
+@media (min-width: 760px) {
+    .filter_container_left_panel {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1080px) {
+    .filter_container_left_panel {
+      display: flex;
+    }
+  }

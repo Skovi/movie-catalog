@@ -7,16 +7,19 @@ import Like from '../../images/like.svg';
 import User from '../../images/user.svg';
 import { useState } from "react";
 
-export const Header = () => {
+export const Header = ({ hidden }) => {
   const [state, setState] = useState('');
 
   const onChangeInput = (e) => {
     setState(e.target.value);
     
     console.log(state);
-  }
+  };
+
+  
+
   return (
-    <div className={styles.header_container}>
+    <div className={styles.header_container} style={{display: `${hidden.displayAllPage}`}}>
 
       <div className={styles.header_container_logo}>
         <img src={Logo} alt='Логотип' />
@@ -38,7 +41,11 @@ export const Header = () => {
         <img src={Like} alt='Любимые фильмы' className={styles.header_container_icons_like} />
         <img src={Loupe} alt='Лупа' className={styles.header_container_icons_loupe} />
         <img src={Cart} alt='Корзина' />
-        <img src={Navigation} alt='Навигация' className={styles.header_container_icons_navigation}/>
+        <img 
+        src={Navigation} 
+        alt='Навигация' 
+        className={styles.header_container_icons_navigation}
+        />
       </div>
     </div>
   )

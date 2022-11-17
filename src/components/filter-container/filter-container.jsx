@@ -1,8 +1,6 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./filter-container.module.css";
-import down from '../../images/down.svg';
-import up from '../../images/up.svg';
-import cross from '../../images/cross.svg';
+
 import { parameters } from '../../utils/data';
 import { FilterParameter } from "../filter-parameter/filter-parameter";
 
@@ -12,12 +10,11 @@ export const FilterContainer = () => {
 
   const onResetFilters = () => {
     onReset(true);
+    getActivefilters([]);
   };
 
   const onChangeValue = () => {
-
   };
-
 
   function colorApply(data) {
     if (data.length) {
@@ -25,32 +22,30 @@ export const FilterContainer = () => {
     };
     return '#707070'
   };
-  return (
-    <div className={styles.filter_container}>
 
-      <div className={styles.filter_container_hide} >
-        <img src={cross} alt='Крестик' />
-        <p>Скрыть фильтр</p>
-      </div>
+
+
+  return (
+    <div className={styles.filter_container} >
       <div className={styles.filter_container_main}>
         <div className={styles.filter_container_price}>
           <p>Цена, ₽ </p>
         </div>
 
         {parameters.map((item, index) => (
-        <FilterParameter 
-        item={item} 
-        key={index} 
-        reset={reset} 
-        onReset={onReset}
-        getActivefilters={getActivefilters}
-        activefilters={activefilters}
-        />
+          <FilterParameter
+            item={item}
+            key={index}
+            reset={reset}
+            onReset={onReset}
+            getActivefilters={getActivefilters}
+            activefilters={activefilters}
+          />
         ))}
 
         <button
           className={styles.filter_container_button_apply}
-          style={{backgroundColor: `${colorApply(activefilters)}`}}
+          style={{ backgroundColor: `${colorApply(activefilters)}` }}
         >
           ПРИМЕНИТЬ
         </button>

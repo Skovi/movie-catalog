@@ -1,14 +1,7 @@
 import styles from "./movie-card.module.css";
 
 export const MovieCard = ({ item }) => {
-  // function colorLables(lables) {
-  //   if (lables == 'АКЦИЯ') {
-  //     return '#00FFF0'
-  //   } else if (lables == 'СКИДКА') {
-  //     return '#FFFFFF'
-  //   }
-
-  // };
+  
   let lables = '';
   switch (item.lables) {
     case 'СКИДКА':
@@ -28,13 +21,14 @@ export const MovieCard = ({ item }) => {
     <div
       className={styles.movie_card}
       style={{
-        backgroundImage: `linear-gradient(180deg, #51515100 40.55%, #26262685 56.1%, #242424e8 72.56%, #333333 100%), url(${item.image})`
+        backgroundImage: `linear-gradient(180deg, #51515100 40.55%, #26262685 56.1%, #242424e8 72.56%, #333333 100%), url(${item.image})`,
+        justifyContent: `${item.lables ? 'space-between' : 'end'}`
       }}
     >
 
-      <div className={styles.movie_card_lables} style={{ color: `${lables}` }}>
+      {item.lables ? (<div className={styles.movie_card_lables} style={{ color: `${lables}` }}>
         <p>{item.lables}</p>
-      </div>
+      </div>) : ''}
 
       <div className={styles.movie_card_info}>
         <h2>{item.name}</h2>

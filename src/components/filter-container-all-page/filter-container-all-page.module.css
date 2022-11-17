@@ -1,0 +1,31 @@
+.filter_container_all_page {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_container_hide {
+  width: 278px;
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #333333;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.filter_container_hide p {
+  margin: 0 9px;
+}
+
+@media (min-width: 760px) {
+  .filter_container_all_page {
+    display: flex;
+  }
+}
+
+@media (min-width: 1080px) {
+  .filter_container_all_page {
+    display: none;
+  }
+}

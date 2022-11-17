@@ -1,8 +1,8 @@
 import styles from "./footer.module.css";
 
-export const Footer = () => {
+export const Footer = ({ hidden }) => {
   return (
-      <footer>
+      <footer style={{display: `${hidden.displayAllPage}`}}>
         <hr />
         <div className={styles.footer_info}>
 
