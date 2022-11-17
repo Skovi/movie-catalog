@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+##Каталог фильмов
+Тестовое задание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Страница на GitHub Pages](https://skovi.github.io/movie-catalog/).
 
-## Available Scripts
+#### Что сделано:
+*адаптивная верстка основных компонентов
+*данные из фильтра собираются в массив
+*работает кнопка "Показать фильтры" и "Скрыть фильтр"
+*чекбоксы и кнопка "Применить фильтр" подсвечиваются оранжевым при нажатии чекбокса
+*при нажатии "Сбросить фильтр" кнопка "Применить" подсвечивается серым
 
-In the project directory, you can run:
+#### Не сделано по макету:
+*нет фильтра цены: не подготовлены инпуты и ползунка для изменения цены
+*нет полосы прокрутки, когда открыт параметр фильтра
 
-### `npm start`
+#### Работает некорректно:
+*не сбрасывается цвет у чекбоксов при нажатии на "Сбросить фильтры"
+*при размере экрана меньше 1440px внизу страницы отображается фильтр
+*компонент "Нет результатов" отображается по всегда (еще и не на том месте), поведение не настроено
+*внизу страницы четыре блока с картинками, при разрешении экрана 760-1440px, ведут себя неподобающе
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Что будет добавлено в ближайшее время (самое ближайшее):
+*добавлен Redux	&#33; , для хранения состояния (на текущий момент можно заметить бесконечное количество пропсов)
+*исправлены пункты из "Не сделано" и "Работает некорректно"
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### В последующем:
+*сделать реальный запрос к API и использовать фильтр по назначению
+*TypeScript &#10084
+*лупа будет возвращать фильмы по названию
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### В перспективе:
+*добавить возможность регистрации
+*личный кабинет с понравившимися фильмами
+*рабочую корзину
