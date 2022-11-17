@@ -1,4 +1,4 @@
-##Каталог фильмов
+## Каталог фильмов:movie_camera:
 Тестовое задание
 
 ### [Страница на GitHub Pages](https://skovi.github.io/movie-catalog/).
